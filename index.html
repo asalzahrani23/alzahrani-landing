@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>alzahrani.org</title>
+  <meta name="description" content="alzahrani.org موقع شخصي مملوك لعبدالرحيم الزهراني، مخصص للأغراض غير الربحية والعائلية والثقافية." />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Tahoma", "Arial", sans-serif;
+      color: #1f2937;
+      background-color: #fafafa;
+      line-height: 1.8;
+    }
+
+    .hero {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3b/Al_Baha_mountains.jpg");
+      background-size: cover;
+      background-position: center;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 60px 24px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 48px;
+    }
+
+    p {
+      max-width: 760px;
+      margin: 16px auto;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      padding: 64px 24px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      text-align: center;
+      padding: 24px;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    .en {
+      margin-top: 12px;
+      color: #374151;
+      direction: ltr;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-overlay">
+      <h1>alzahrani.org</h1>
+      <p>
+        موقع شخصي مملوك لـ<br />
+        <strong>عبدالرحيم الزهراني</strong>
+      </p>
+      <p class="en">
+        A personal website belonging to<br />
+        <strong>Abdulraheem Alzahrani</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="container">
+    <h2>الغرض من الموقع</h2>
+    <p>
+      هذا الموقع مملوك بشكل خاص لعبدالرحيم الزهراني، ومخصص للاستخدام
+      غير الربحي، والشؤون العائلية، والمحتوى الثقافي والتاريخي.
+    </p>
+    <p class="en">
+      This website is privately owned by Abdulraheem Alzahrani.
+      It is intended for non-profit use, family matters,
+      and cultural or historical content.
+    </p>
+
+    <p>
+      قد يتضمن الموقع مستقبلاً مواد توثيقية، تاريخاً عائلياً،
+      صوراً، كتابات، أو مبادرات مجتمعية ذات طابع ثقافي.
+    </p>
+    <p class="en">
+      Over time, the site may include family history,
+      archival material, photographs, written reflections,
+      or community-oriented cultural initiatives.
+    </p>
+
+    <h2>الجذور</h2>
+    <p>
+      يستلهم هذا الموقع هويته من الطبيعة والإرث الثقافي لمحافظة
+      <strong>المندق</strong> في منطقة <strong>الباحة</strong>.
+    </p>
+    <p class="en">
+      This site is inspired by the natural beauty and cultural heritage
+      of <strong>Al-Mandaq</strong>, located in the
+      <strong>Al-Baha region</strong> of Saudi Arabia.
+    </p>
+
+    <!-- IMAGE GALLERY -->
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Al_Baha_region_mountains.jpg" alt="جبال منطقة الباحة">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Al_Baha_forest.jpg" alt="غابات الباحة">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Al_Baha_village.jpg" alt="قرية تراثية في الباحة">
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © <span id="year"></span> عبدالرحيم الزهراني · Abdulraheem Alzahrani · alzahrani.org
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
