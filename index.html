@@ -14,18 +14,21 @@
       background-color: #fafafa;
       line-height: 1.8;
     }
+.hero {
+  background-image: url("Images/cloud_sky_white_background_hd_white_background.jpg");
+  background-size: cover;       /* Makes image fill hero area */
+  background-position: center;  /* Center it nicely */
+  background-repeat: no-repeat; /* Avoid repeating if smaller */
+  min-height: 60vh;             /* Hero height: 60% of viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;             /* Hide anything outside */
+}
 
-    .hero {
-      background-image: url("Images/cloud_sky_white_background_hd_white_background.jpg");
-      background-size: cover;
-      background-position: center;
-      min-height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
+ 
 
     .hero-overlay {
       background: rgba(0, 0, 0, 0.5);
